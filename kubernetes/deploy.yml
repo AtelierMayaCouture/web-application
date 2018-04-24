@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: amc-client
+  labels:
+    app: amc-client
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amc-client
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: amc-client
+    spec:
+      containers:
+      - image: gcr.io/k8s-aksels/github-akselsledins-atelier-maya-couture:client-v1.0
+        command: ["pushstate-server build"]
+        name: amc-client
+        resources:
+          requests:
+            cpu: 20m
+            memory: 55M
+        env:
+        - name: REACT_APP_RECAPTCHA_PUBLIC_KEY
+          valueFrom:
+            secretKeyRef:
+              name: amc-secret
+              key: REACT_APP_RECAPTCHA_PUBLIC_KEY

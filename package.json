@@ -1,0 +1,27 @@
+{
+  "name": "amc-client",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "classnames": "2.2.x",
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "jquery": "^3.1.1",
+    "react": "15.4.x",
+    "react-dom": "15.4.x",
+    "react-ga": "^2.1.2",
+    "react-google-recaptcha": "^0.5.4",
+    "react-router": "3.0.x",
+    "recompose": "0.22.x"
+  },
+  "scripts": {
+    "prod": "node production-server.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

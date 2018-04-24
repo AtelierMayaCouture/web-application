@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: amc-client-svc
+spec:
+  selector:
+    app: amc-client
+  type: NodePort
+  ports:
+  - name: amc-client-svc
+    port: 8080
+    targetPort: 3000
