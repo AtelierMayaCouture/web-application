@@ -1,6 +1,6 @@
 # Dockerfile
 
-FROM node:8-alpine
+FROM node:10-alpine
 
 WORKDIR /usr/src/app
 
