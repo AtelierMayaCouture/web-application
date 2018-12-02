@@ -21,8 +21,7 @@ spec:
         app: amc-client
     spec:
       containers:
-      - image: gcr.io/k8s-aksels/github-akselsledins-atelier-maya-couture:client-v1.0
-        command: ["pushstate-server build"]
+      - image: gcr.io/k8s-aksels/github-ateliermayacouture-web-application:v1.5
         name: amc-client
         resources:
           requests:
