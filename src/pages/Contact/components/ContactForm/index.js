@@ -22,7 +22,7 @@ class ContactForm extends React.Component {
     var _this = this;
 
     /* set the callback function */
-    x.onreadystatechange = function() {
+    x.onreadystatechange = function () {
       if (x.readyState === 4) {
         var response = JSON.parse(x.responseText);
 
@@ -34,11 +34,11 @@ class ContactForm extends React.Component {
         }
       }
     }
-        /* send the request */
-    x.open('POST', 'https://contact.ateliermayacouture.com/contact', true );
+    /* send the request */
+    x.open('POST', 'https://contact.ateliermayacouture.com/contact', true);
     x.setRequestHeader('Content-type', 'application/json');
 
-    x.send( JSON.stringify( this.state.data ) );
+    x.send(JSON.stringify(this.state.data));
   }
 
   validate = (data) => {
@@ -125,7 +125,7 @@ class ContactForm extends React.Component {
                   <div style={{ marginBottom: 9 }}>
                     <ReCAPTCHA
                       ref="recaptcha"
-                      sitekey={process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY}
+                      sitekey="6LdPpRsTAAAAALi5zVtQRjR0KhK62uCsBW2FDxS5"
                       onChange={this.GRChange}
                     />
                   </div>
@@ -135,10 +135,10 @@ class ContactForm extends React.Component {
 
                   {/* Message */}
                   <div className="form-group">
-                      <textarea
-                        name="message" id="message" className="input-md round form-control" style={{ height: 214 }} placeholder="Message"
-                        value={this.state.data.message} onChange={this.handleChange}
-                      ></textarea>
+                    <textarea
+                      name="message" id="message" className="input-md round form-control" style={{ height: 214 }} placeholder="Message"
+                      value={this.state.data.message} onChange={this.handleChange}
+                    ></textarea>
                   </div>
 
                 </div>
@@ -147,9 +147,9 @@ class ContactForm extends React.Component {
               <div className="clearfix">
                 <div className="cf-left-col">
 
-                    {/* Tip */}
-                    <div className="form-tip pt-20">
-                        <i className="fa fa-info-circle"></i> Tous les champs sont requis
+                  {/* Tip */}
+                  <div className="form-tip pt-20">
+                    <i className="fa fa-info-circle"></i> Tous les champs sont requis
                     </div>
 
                 </div>
@@ -158,13 +158,13 @@ class ContactForm extends React.Component {
 
                   {/* Send Button */}
                   <div className="align-right pt-10">
-                    {this.state.error && <p style={{ color: '#F44336'}}>{this.state.error}</p> }
+                    {this.state.error && <p style={{ color: '#F44336' }}>{this.state.error}</p>}
                     {this.state.info &&
                       <p>
                         {this.state.info}
                       </p>
                     }
-                    <button style={{ width: '100%' }}className="submit_btn btn btn-mod btn-medium btn-round">
+                    <button style={{ width: '100%' }} className="submit_btn btn btn-mod btn-medium btn-round">
                       Envoyer le message
                     </button>
                   </div>
