@@ -11,7 +11,7 @@ const HeroContent = ({ text, img }) => (
           </div>
         </div>
         <h2 className="hs-line-3 mb-0">{text}</h2>
-        <h3>
+        <h4>
           <u>Coronavirus</u>
           <ul>
             <li>
@@ -24,7 +24,7 @@ const HeroContent = ({ text, img }) => (
               dans un sac.
             </li>
           </ul>
-        </h3>
+        </h4>
       </div>
     </div>
   </div>
