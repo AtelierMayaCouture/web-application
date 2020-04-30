@@ -9,7 +9,7 @@
     "classnames": "2.2.x",
     "compression": "^1.7.2",
     "express": "^4.16.3",
-    "jquery": "^3.1.1",
+    "jquery": "^3.5.0",
     "react": "15.4.x",
     "react-dom": "15.4.x",
     "react-ga": "^2.1.2",
