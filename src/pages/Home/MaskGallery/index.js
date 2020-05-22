@@ -20,7 +20,7 @@ const data = [
   },
   {
     key: "4",
-    src: "masks/masque5.jpg",
+    src: "masks/masque6.jpg",
     alt: "Masque",
   },
 ];
