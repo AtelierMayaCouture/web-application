@@ -35,13 +35,14 @@ class ContactForm extends React.Component {
       }
     }
     /* send the request */
-    x.open('POST', 'https://contact.ateliermayacouture.com/contact', true);
+    x.open('POST', 'https://europe-west2-k8s-aksels.cloudfunctions.net/amcContact', true);
     x.setRequestHeader('Content-type', 'application/json');
 
     x.send(JSON.stringify(this.state.data));
   }
 
   validate = (data) => {
+    // foo
     if (!this.state.data.recaptcha) {
       this.setState({
         editable: true,
@@ -104,75 +105,37 @@ class ContactForm extends React.Component {
       <span>
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
-            <form className="form contact-form" onSubmit={this.handleSubmit}>
               <div className="clearfix">
                 <div className="cf-left-col">
-                  {/* Name */}
-                  <Input
-                    type="text" name="name" id="name" placeholder="Nom" required
-                    value={this.state.data.name} onChange={this.handleChange}
-                  />
-                  {/* Email */}
-                  <Input
-                    type="email" name="email" id="email" placeholder="Email" required
-                    value={this.state.data.email} onChange={this.handleChange}
-                  />
-                  {/* Phone */}
-                  <Input
-                    type="phone" name="phone" id="phone" placeholder="Téléphone" required
-                    value={this.state.data.phone} onChange={this.handleChange}
-                  />
-                  <div style={{ marginBottom: 9 }}>
-                    <ReCAPTCHA
-                      ref="recaptcha"
-                      sitekey="6LdPpRsTAAAAALi5zVtQRjR0KhK62uCsBW2FDxS5"
-                      onChange={this.GRChange}
-                    />
-                  </div>
+                   <a href="mailto:mayacouture@hotmail.fr">
+
+                  <button className="btn btn-mod btn-medium btn-round">Cliquez pour m'envoyer un mail (mayacouture@hotmail.fr)</button>
+                  </a>
                 </div>
 
+                <br />
+                <br />
+                <br />
+                <br />
+              <div className="clearfix"></div>
                 <div className="cf-right-col">
-
-                  {/* Message */}
-                  <div className="form-group">
-                    <textarea
-                      name="message" id="message" className="input-md round form-control" style={{ height: 214 }} placeholder="Message"
-                      value={this.state.data.message} onChange={this.handleChange}
-                    ></textarea>
-                  </div>
-
+                           <a href="tel:+33623571253">
+                  <button className=" btn btn-mod btn-medium btn-round">Cliquez pour m'appeler (06 23 57 12 53)</button>
+                  </a>
                 </div>
               </div>
 
               <div className="clearfix">
                 <div className="cf-left-col">
-
-                  {/* Tip */}
-                  <div className="form-tip pt-20">
-                    <i className="fa fa-info-circle"></i> Tous les champs sont requis
-                    </div>
 
                 </div>
 
                 <div className="cf-right-col">
 
                   {/* Send Button */}
-                  <div className="align-right pt-10">
-                    {this.state.error && <p style={{ color: '#F44336' }}>{this.state.error}</p>}
-                    {this.state.info &&
-                      <p>
-                        {this.state.info}
-                      </p>
-                    }
-                    <button style={{ width: '100%' }} className="submit_btn btn btn-mod btn-medium btn-round">
-                      Envoyer le message
-                    </button>
-                  </div>
-
                 </div>
               </div>
               <div id="result"></div>
-            </form>
           </div>
         </div>
       </span>
