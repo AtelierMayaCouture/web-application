@@ -112,7 +112,7 @@ const Footer = () => {
 
               {/* <!-- Copyright --> */}
               <div className="footer-copy font-alt">
-                  &copy; Atelier Maya Couture 2017
+                  &copy; Atelier Maya Couture 2020
               </div>
               {/* <!-- End Copyright --> */}
 
