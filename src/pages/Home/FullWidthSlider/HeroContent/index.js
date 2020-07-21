@@ -11,20 +11,6 @@ const HeroContent = ({ text, img }) => (
           </div>
         </div>
         <h2 className="hs-line-3 mb-0">{text}</h2>
-        <h4>
-          <u>Coronavirus</u>
-          <ul>
-            <li>
-              Je vous propose des <b>masques</b> pour vous protéger. Ils suivent
-              les conseils de fabrication du CHU de Grenoble.
-            </li>
-            <li>
-              Je peux me déplacer chez vous en gardant les distances de sécurité
-              et vous pouvez me confier les travaux de couture en les mettant
-              dans un sac.
-            </li>
-          </ul>
-        </h4>
       </div>
     </div>
   </div>

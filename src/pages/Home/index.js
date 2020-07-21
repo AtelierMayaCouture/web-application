@@ -1,82 +1,23 @@
 // src/components/Home/index.js
-import React, { Component } from "react";
-import classnames from "classnames";
+import React, { PropTypes, Component } from 'react';
+import classnames from 'classnames';
 
-import SplitSection from "./../../components/SplitSection";
+import SplitSection from './../../components/SplitSection';
 
-import FullWidthSlider from "./FullWidthSlider";
-import Testimonials from "./Testimonials";
-import Gallery from "./Gallery";
-import MaskGallery from "./MaskGallery";
-import Features from "./Features";
+import FullWidthSlider from './FullWidthSlider';
+import Testimonials from './Testimonials';
+import Gallery from './Gallery';
+import Features from './Features';
 
 export default class Home extends Component {
   render() {
     const { className } = this.props;
     return (
-      <div className={classnames("Home", className)}>
+      <div className={classnames('Home', className)}>
         {/* <!-- Fullwidth Slider --> */}
         <FullWidthSlider />
 
         {/* <!-- Split Section --> */}
-        <SplitSection
-          right={false}
-          title="Masques"
-          description={
-            <div>
-              Je confectionne des{" "}
-              <b>
-                masques lavables antiprojection d'après le modèle du CHU de
-                Grenoble
-              </b>{" "}
-              pour vous protéger du <b>Coronavirus</b>. Ils sont avec des
-              élastiques ou avec des liens attachables et réglables sur la tête
-              et le nez. Je peux faire les masques dans le tissu de votre choix
-              (il est conseillé que le tissu soit 100% coton pour qu'il soit
-              lavable à plus de 60 degrés).
-              <br /> <br />
-              Pour plus d'informations, appelez-moi au 06 23 57 12 53.
-              <div style={{ marginTop: 8 }}>
-                10 euros par masque, pour m'aider à traverser cette crise! Merci
-              </div>
-              <small style={{ marginTop: 8 }}>
-                Quantité disponible très limitée
-              </small>
-            </div>
-          }
-          background="images/home/masque.jpg"
-        />
-        <MaskGallery />
-        <div className={`split-section-headings left`}>
-          <div className="ssh-table">
-            <div
-              className="ssh-cell page-section bg-scroll"
-              data-background="images/home/masque2.jpg"
-              style={{
-                background: `url(images/home/masque2.jpg)`,
-                backgroundSize: "auto 100%",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center center",
-              }}
-            />
-          </div>
-        </div>
-
-        <div className={`split-section-headings right`}>
-          <div className="ssh-table">
-            <div
-              className="ssh-cell page-section bg-scroll"
-              data-background="images/home/masque3.jpg"
-              style={{
-                background: `url(images/home/masque3.jpg)`,
-                backgroundSize: "auto 100%",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center center",
-              }}
-            />
-          </div>
-        </div>
-
         <SplitSection
           right
           title="Retouches"
@@ -98,8 +39,8 @@ export default class Home extends Component {
             Machine à coudre à votre disposition si nécessaire.
           `}
           bouton={{
-            url: "/prix",
-            text: "Voir les tarifs",
+            url: '/prix',
+            text: 'Voir les tarifs',
           }}
           background="images/home/cours.jpg"
         />
@@ -177,10 +118,12 @@ export default class Home extends Component {
         </section>
         {/* <!-- End Split Section --> */}
 
+
         {/* Testimonials */}
         <Testimonials />
         <Gallery />
         <Features />
+
       </div>
     );
   }
