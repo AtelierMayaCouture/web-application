@@ -11,6 +11,16 @@ const HeroContent = ({ text, img }) => (
           </div>
         </div>
         <h2 className="hs-line-3 mb-0">{text}</h2>
+
+        <br />
+        <b>
+        <h3 style={{
+          border: "2px solid #FFF",
+          padding: 10,
+          fontSize: "3rem"
+        }}>CONFINEMENT: La boutique est OUVERTE mais uniquement sur RDV.</h3>
+        </b>
+
       </div>
     </div>
   </div>
