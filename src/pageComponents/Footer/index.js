@@ -73,12 +73,12 @@ const Footer = () => {
                                 <small>
                                   <table>
                                     <tbody>
-                                      <tr><td>Lundi</td><td>9h - 12:15</td><td>14h - 16h45<br /></td></tr>
-                                      <tr><td>Mardi</td><td>9h - 12:15</td><td>15h - 18h30<br /></td></tr>
-                                      <tr><td>Mercredi</td><td>9h - 12:15</td><td>15h - 18h30<br /></td></tr>
-                                      <tr><td>Jeudi</td><td>9h - 12:15</td><td>14h - 16h45<br /></td></tr>
-                                      <tr><td>Vendredi</td><td>9h - 12:15</td><td>15h - 18h30<br /></td></tr>
-                                      <tr><td>Samedi</td><td>9h30 - 12:30<br /></td></tr>
+                                      <tr><td>Lundi</td><td>Fermé</td></tr>
+                                      <tr><td>Mardi</td><td>9h - 12h15</td><td>15h - 18h30<br /></td></tr>
+                                      <tr><td>Mercredi</td><td>9h - 12h30</td><td>15h - 18h30<br /></td></tr>
+                                      <tr><td>Jeudi</td><td>9h - 12h15</td><td>15h - 18h30<br /></td></tr>
+                                      <tr><td>Vendredi</td><td>9h - 12h30</td><td>15h - 18h30<br /></td></tr>
+                                      <tr><td>Samedi</td><td>9h30 - 12h30<br /></td></tr>
                                       <tr><td>Dimanche&nbsp;&nbsp;</td><td>Fermé</td></tr>
                                     </tbody>
                                   </table>
