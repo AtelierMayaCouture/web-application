@@ -15,7 +15,7 @@ const Autres = () => (
             <tbody>
               <tr>
                 <td>Créations sur mesure, autres demandes</td>
-                <td className="align-right">28€ / h</td>
+                <td className="align-right">30€ / h</td>
               </tr>
             </tbody>
           </table>

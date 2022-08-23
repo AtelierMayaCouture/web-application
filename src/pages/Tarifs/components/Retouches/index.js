@@ -1,29 +1,28 @@
-import React from 'react';
-import pure from 'recompose/pure';
+import React from "react";
+import pure from "recompose/pure";
 
-import { tarifs as dataTarifs } from './../../data';
+import { tarifs as dataTarifs } from "./../../data";
 
 const trStyle = {
   padding: 8,
   lineHeight: 1.42857143,
-  verticalAlign: 'top',
-  borderTop: '1px solid #ddd',
+  verticalAlign: "top",
+  borderTop: "1px solid #ddd",
 };
 
 const Item = ({ price, label }) => (
   <tr style={trStyle}>
-      <td>
-        {label}
-      </td>
-      <td className="align-right">{price}€</td>
+    <td>{label}</td>
+    <td className="align-right">{price}€</td>
   </tr>
 );
 
 const Retouches = () => {
-
   const halfLength = Math.ceil(dataTarifs.length / 2);
   const leftSide = dataTarifs.slice(0, halfLength);
   const rightSide = dataTarifs.slice(halfLength, dataTarifs.length);
+
+  console.log("right side", rightSide);
 
   return (
     <span>
@@ -34,14 +33,18 @@ const Retouches = () => {
           <div className="col-sm-6">
             <table className="table table-hover">
               <tbody>
-                { leftSide.map(item => <Item key={`{item.key}-pricings`} {...item} />) }
+                {leftSide.map((item) => (
+                  <Item key={`${item.label}-pricings`} {...item} />
+                ))}
               </tbody>
             </table>
           </div>
           <div className="col-sm-6">
             <table className="table table-hover">
               <tbody>
-                { rightSide.map(item => <Item key={`{item.key}-pricings`} {...item} />) }
+                {rightSide.map((item) => (
+                  <Item key={`${item.label}-pricings`} {...item} />
+                ))}
               </tbody>
             </table>
           </div>
@@ -49,6 +52,6 @@ const Retouches = () => {
       </div>
     </span>
   );
-}
+};
 
 export default pure(Retouches);
