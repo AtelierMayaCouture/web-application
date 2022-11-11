@@ -32,14 +32,14 @@ export default class Home extends Component {
           right={false}
           title="Cours de couture"
           description={`
-            Les cours de coutures sont proposés tous les samedis matins de 9h30 à 12h30. Le prix est de 24€ pour les trois heures. Aucun engagement pendant l'année. Il faut s'inscrire par téléphone (06 23 57 12 53).
+            Les cours de coutures sont proposés tous les samedis matins de 9h30 à 12h30 et les jeudis 17h à 20h. Le prix est de 35€ pour les trois heures. Aucun engagement pendant l'année. Il faut s'inscrire par téléphone (06 23 57 12 53).
 
             Petits groupes jusqu\'à 4 personnes, tous niveaux confondus.
 
             Machine à coudre à votre disposition si nécessaire.
           `}
           bouton={{
-            url: '/prix',
+            url: '/tarifs',
             text: 'Voir les tarifs',
           }}
           background="images/home/cours.jpg"

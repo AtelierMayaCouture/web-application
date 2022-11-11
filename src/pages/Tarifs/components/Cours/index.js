@@ -12,12 +12,12 @@ const Cours = () => (
             <tbody>
               <tr>
                 <td>Les 3h</td>
-                <td className="align-right">35€ TTC</td>
+                <td className="align-right">35€</td>
               </tr>
 
               <tr>
                 <td>Les 10 séances de 3h</td>
-                <td className="align-right">300€ TTC</td>
+                <td className="align-right">300€</td>
               </tr>
 
               <tr>
