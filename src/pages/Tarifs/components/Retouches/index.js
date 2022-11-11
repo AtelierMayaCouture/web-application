@@ -22,11 +22,13 @@ const Retouches = () => {
   const leftSide = dataTarifs.slice(0, halfLength);
   const rightSide = dataTarifs.slice(halfLength, dataTarifs.length);
 
-  console.log("right side", rightSide);
-
   return (
     <span>
       <h2 className="section-title font-alt mb-70 mb-sm-40">Retouches</h2>
+
+      <div className="section-text mb-80 mb-xs-60">
+        <p style={{ textAlign: 'center' }}>Les prix annoncés sont TTC — TVA 20%.</p>
+     </div>
 
       <div className="section-text mb-80 mb-xs-60">
         <div className="row">
