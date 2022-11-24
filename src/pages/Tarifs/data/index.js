@@ -5,7 +5,7 @@ export const tarifs = [
     price: 20,
     label: "Ourlet invisible pantalon (fait-main) avec renfort",
   },
-  { price: 22, label: "Poignets chemise" },
+  { price: 23, label: "Poignets chemise" },
   { price: 25, label: "Poignets chemise avec la patte" },
   { price: 25, label: "Reprise un côté d'un pantalon" },
   { price: 23, label: "Changement fermeture éclair pantalon" },
