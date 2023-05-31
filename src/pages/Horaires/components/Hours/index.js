@@ -15,6 +15,8 @@ const Hours = () => (
     <div className="row">
       <div className="col-sm-3" />
         <div className="col-sm-6">
+          <p>L'atelier est ouvert du mardi au samedi de 9h30 à 12h30.</p>
+          <br /><br />
           <Table>
             { data.map( item =>
               <Line
