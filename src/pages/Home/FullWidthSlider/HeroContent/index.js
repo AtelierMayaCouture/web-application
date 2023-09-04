@@ -11,10 +11,6 @@ const HeroContent = ({ text, img }) => (
           </div>
         </div>
         <h2 className="hs-line-3 mb-0">{text}</h2>
-        <br />
-        <p className="hs-line-3 mb-0" style={{ border: '1px solid #FFF', padding: 10}}>
-          L'atelier sera fermé pendant les vacances d'été jusqu'au 5 septembre
-        </p>
       </div>
     </div>
   </div>
