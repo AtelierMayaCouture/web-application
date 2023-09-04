@@ -16,8 +16,8 @@ const Hours = () => (
       <div className="col-sm-3" />
       <div className="col-sm-6">
         <p>
-          L'atelier est ouvert du mardi au samedi de 9h30 à 12h30 et le mercredi
-          après-midi.
+          L'atelier est ouvert du mardi au samedi de 9h à 12h30 ainsi que le
+          mercredi après-midi.
         </p>
         <br />
         <br />
