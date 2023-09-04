@@ -74,7 +74,7 @@ const Footer = () => {
                             <td>Mercredi</td>
                             <td>9h - 12h30</td>
                             <td>
-                              14h - 18h30
+                              &nbsp;&amp; 14h - 18h30
                               <br />
                             </td>
                           </tr>
