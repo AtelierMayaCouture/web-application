@@ -68,7 +68,7 @@ const Footer = () => {
                           </tr>
                           <tr>
                             <td>Mardi</td>
-                            <td>9h - 12h30</td>
+                            <td>9h - 12h</td>
                           </tr>
                           <tr>
                             <td>Mercredi</td>
@@ -84,7 +84,10 @@ const Footer = () => {
                           </tr>
                           <tr>
                             <td>Vendredi</td>
-                            <td>9h - 12h30</td>
+                            <td>9h - 12h30</td><td>
+                              &nbsp;&amp; 14h - 18h30
+                              <br />
+                            </td>
                           </tr>
                           <tr>
                             <td>Samedi</td>
