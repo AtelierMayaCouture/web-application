@@ -27,8 +27,10 @@ const Retouches = () => {
       <h2 className="section-title font-alt mb-70 mb-sm-40">Retouches</h2>
 
       <div className="section-text mb-80 mb-xs-60">
-        <p style={{ textAlign: 'center' }}>Les prix annoncés sont TTC — TVA 20%.</p>
-     </div>
+        <p style={{ textAlign: "center" }}>
+          TVA non applicable, article 293B du code général des impôts
+        </p>
+      </div>
 
       <div className="section-text mb-80 mb-xs-60">
         <div className="row">
