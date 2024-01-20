@@ -84,7 +84,8 @@ const Footer = () => {
                           </tr>
                           <tr>
                             <td>Vendredi</td>
-                            <td>9h - 12h30</td><td>
+                            <td>9h - 12h30</td>
+                            <td>
                               &nbsp;&amp; 14h - 18h30
                               <br />
                             </td>
@@ -129,7 +130,7 @@ const Footer = () => {
         <div className="footer-text">
           {/* <!-- Copyright --> */}
           <div className="footer-copy font-alt">
-            &copy; Atelier Maya Couture 2020
+            &copy; Atelier Maya Couture 2024
           </div>
           {/* <!-- End Copyright --> */}
 
