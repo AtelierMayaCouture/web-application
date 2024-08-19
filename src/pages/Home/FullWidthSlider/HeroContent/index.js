@@ -11,13 +11,6 @@ const HeroContent = ({ text, img }) => (
           </div>
         </div>
         <h2 className="hs-line-3 mb-0">{text}</h2>
-        <br />
-        <br />
-        <p className="hs-line-3 mb-0">
-          <u>
-            <b>L'atelier sera fermé 06/03 au 23/03.</b>
-          </u>
-        </p>
       </div>
     </div>
   </div>
